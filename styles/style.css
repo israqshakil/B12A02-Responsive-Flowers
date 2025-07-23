@@ -126,3 +126,75 @@
   margin-top: -150px;
   margin-left: -230px;
 }
+
+/* latest deal styles */
+
+.deal-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 125px 130px 150px;
+}
+.deal-contents h3 span {
+  color: #e95a08;
+}
+
+/* .deals-cards {
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.mini-card-1 {
+  background-image: url(../assets/deal-ana.png);
+}
+.mini-card-2 {
+  background-image: url(../assets/deal-bloom.png);
+}
+.max {
+  width: 753px;
+  height: 420px;
+  background-image: url(../assets/deal-zabo.png);
+}
+.max h4 {
+  text-align: center;
+}
+.max a {
+  text-align: center;
+} */
+
+/* join the bunch styles */
+
+.join-section {
+  max-width: 1440px;
+  height: 530px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 200px;
+  gap: 15px;
+
+  background-image: url(../assets/news-letter-bg.png);
+}
+.join-section {
+  margin-bottom: 30px;
+}
+#email {
+  width: 644px;
+  height: 50px;
+  border: none;
+  text-align: 20px;
+}
+#submit {
+  width: 186px;
+  height: 50px;
+  color: white;
+  font-weight: 600;
+  background-color: #e95a08;
+  border: none;
+  padding-block-start: 3px;
+}
+.join-section h3 {
+  color: white;
+}
