@@ -105,3 +105,24 @@
 .lily-flower-image {
   margin-bottom: 30px;
 }
+
+/* flower & plant lover section styles */
+
+.plant-lover {
+  align-items: center;
+  justify-content: space-between;
+  height: 880px;
+  gap: 60px;
+  overflow: hidden;
+}
+.plant-contents ul li {
+  margin: 20px 0;
+}
+.plant-contents ul {
+  padding-left: 28px;
+}
+.plant-contents img {
+  width: 280px;
+  margin-top: -150px;
+  margin-left: -230px;
+}
