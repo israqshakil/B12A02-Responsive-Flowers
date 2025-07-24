@@ -190,6 +190,7 @@
   font-weight: 600;
   background-color: #e95a08;
   border: none;
+  cursor: pointer;
 }
 .form {
   display: flex;
