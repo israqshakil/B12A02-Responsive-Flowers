@@ -26,6 +26,12 @@
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
 }
+.plant-contents {
+  width: 50%;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
 .btn-primary {
   color: white;
   background-color: rgb(233, 90, 8);
@@ -111,28 +117,61 @@
 
 /* flower & plant lover section styles */
 
-.plant-lover {
+/* .plant-lover {
   align-items: center;
   justify-content: space-between;
   height: 880px;
   gap: 60px;
   overflow: hidden;
+} */
+.plant-lover {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-top: 100px;
+  /* border: 2px solid red; */
+}
+.plant-contents {
+  margin-top: -20px;
+}
+.plant-image {
+  width: 50%;
+  /* border: 2px solid green; */
+}
+.store-img {
+  width: 100%;
 }
 .plant-contents ul li {
   margin: 20px 0;
 }
+
 .plant-contents ul {
   padding-left: 28px;
 }
+.plant-contents h3 {
+  color: black;
+}
 .plant-contents img {
   width: 280px;
-  margin-top: -150px;
+  margin-top: -130px;
   margin-left: -230px;
+  animation: badge-animation 2s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes badge-animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* latest deal styles */
 
 .deal-section {
+  margin-top: 100px;
   margin-bottom: 120px;
 }
 
@@ -172,7 +211,7 @@
   font-weight: 700;
 }
 .mini-card-1 a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -192,7 +231,7 @@
   font-weight: 700;
 }
 .mini-card-2 a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -211,7 +250,7 @@
   font-weight: 700;
 }
 .max a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: white;
   font-size: 1.75rem;
   font-weight: 600;
@@ -220,15 +259,18 @@
 /* join the bunch styles */
 
 .join-section {
-  max-width: 1440px;
+  /* max-width: 1440px; */
+  /* border: 2px solid blue; */
+  width: 100%;
   height: 530px;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding-top: 200px;
+  justify-content: center;
+  /* padding-top: 200px; */
   gap: 15px;
   margin-bottom: 50px;
   background-image: url(../assets/news-letter-bg.png);
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -257,17 +299,23 @@
 /* footer section styles */
 .footer {
   align-items: center;
+  display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  width: 100%;
 }
 .foot-content {
+  margin-top: -40px;
   height: 180px;
+  /* border: 1px solid black; */
 }
 .foot-logo {
   margin-bottom: 16px;
+  /* border: 1px solid red; */
 }
 .foot-links {
   list-style: none;
+  /* border: 1px solid gold; */
 }
 .foot-link {
   margin-bottom: 25px;
@@ -281,13 +329,17 @@
   align-items: center;
   justify-content: flex-start;
   gap: 24px;
-  margin-bottom: 212px;
+  margin-top: -190px;
 }
 
 /* responsive design for mobile screen */
 
 @media screen and (max-width: 576px) {
   /* header section */
+
+  /* header {
+    border: black 3px solid;
+  } */
 
   .navbar {
     width: 100%;
@@ -361,9 +413,25 @@
     align-items: center;
     height: 100%;
     margin-bottom: 100px;
+    /* border: black 2px solid; */
   }
-  .plant-image img {
+  /* .plant-image img {
     width: 100%;
+
+    margin: 0 auto;
+  } */
+  .plant-image {
+    width: 100%;
+    /* border: 2px solid green; */
+  }
+  .plant-contents {
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+
+    /* border: 2px solid yellow; */
   }
   .plant-lover h3 {
     margin-left: 20px;
@@ -420,7 +488,13 @@
   .join-section {
     width: 100%;
     align-items: center;
-    align-content: center;
+    height: 276px;
+    /* align-content: center; */
+    /* border: black 2px solid; */
+  }
+  .join-section h3 {
+    font-size: 2rem;
+    margin: 0 auto;
   }
   .form {
     width: 300px;
@@ -435,6 +509,13 @@
     width: 100%;
     flex-direction: column;
     align-items: baseline;
-    margin-left: 20px;
+    padding: 0 20px;
+    gap: 30px;
+  }
+  .foot-content {
+    margin-top: 0px;
+  }
+  .foot-icon {
+    margin-top: 0px;
   }
 }
